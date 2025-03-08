@@ -11,14 +11,15 @@ if (isNaN(number1) || isNaN(number2) || isNaN(number3)) {
 } else {
     let numeros = [number1, number2, number3];
 
-    let numerosOrdenAscendente = numeros.sort(function (a, b) {
-        return a - b;
-    });
-    console.log("Numeros ordenados de menor a mayor " + numeros);
     let numerosOrdenDescendente = numeros.sort(function (a, b) {
         return b - a;
     });
     console.log("Numeros ordenados de mayor a menor " + numeros);
+
+    let numerosOrdenAscendente = numeros.sort(function (a, b) {
+        return a - b;
+    });
+    console.log("Numeros ordenados de menor a mayor " + numeros);
 }
 
 if (number1 === number2 && number2 === number3) {
